@@ -11,9 +11,7 @@ import android.widget.ImageView;
  */
 
 public class AlignedImageView extends ImageView {
-
 	private AlignType alignType;
-
 
 	public AlignedImageView(Context context) {
 		super(context);
@@ -31,8 +29,6 @@ public class AlignedImageView extends ImageView {
 	}
 
 	private void init(Context context, AttributeSet attrs) {
-		//default scaleType is matrix
-//		setScaleType(ScaleType.MATRIX);
 		if (attrs != null) {
 			TypedArray typedArray = context.getTheme().obtainStyledAttributes(attrs, R.styleable.AlignedImageView, 0, 0);
 			try {
