@@ -1,5 +1,6 @@
 package me.ghui.imagescaledemo;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
@@ -63,6 +64,6 @@ public class MainActivity extends AppCompatActivity {
 	}
 
 	public void matrix(View view) {
-		// TODO: 21/02/2017  
+		startActivity(new Intent(this, MatrixActivity.class));
 	}
 }
