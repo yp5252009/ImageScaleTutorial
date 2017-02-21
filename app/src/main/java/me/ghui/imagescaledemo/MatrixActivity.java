@@ -21,6 +21,14 @@ public class MatrixActivity extends AppCompatActivity {
 	}
 
 	public void alignTopWidthMatch(View view) {
+		imgView.setAlignType(AlignedImageView.AlignType.TOP);
+	}
 
+	public void alignLeftHeightMatchParent(View view) {
+		imgView.setAlignType(AlignedImageView.AlignType.LEFT);
+	}
+
+	public void alignRightHeightMatchParent(View view) {
+		imgView.setAlignType(AlignedImageView.AlignType.RIGHT);
 	}
 }

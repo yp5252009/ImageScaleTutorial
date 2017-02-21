@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/activity_matrix"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -11,27 +11,43 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="me.ghui.imagescaledemo.MatrixActivity">
+
     <me.ghui.imagescaledemo.AlignedImageView
         android:id="@+id/img"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
         android:background="#b3def6"
-        android:layout_width="match_parent"
-        app:alignType="top"
-        android:src="@drawable/pic"
-        android:layout_height="250dp"/>
+        android:scaleType="matrix"
+        android:src="@drawable/pic"/>
+
     <LinearLayout
-        android:layout_below="@id/img"
         android:layout_width="match_parent"
-        android:orientation="vertical"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:layout_below="@id/img"
+        android:orientation="vertical">
+
         <Button
             android:layout_width="match_parent"
+            android:layout_height="wrap_content"
             android:onClick="alignTopWidthMatch"
-            android:text="AlignTop_WidthMatchParent"
-            android:layout_height="wrap_content"/>
+            android:text="AlignTop_WidthMatchParent"/>
+
         <Button
             android:layout_width="match_parent"
+            android:layout_height="wrap_content"
             android:onClick="alignBottomWidthMatch"
-            android:text="AlignBottom_WidthMatchParent"
-            android:layout_height="wrap_content"/>
+            android:text="AlignBottom_WidthMatchParent"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="alignLeftHeightMatchParent"
+            android:text="AlignLeft_HeightMatchParent"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="alignRightHeightMatchParent"
+            android:text="AlignRight_HeightMatchParent"/>
     </LinearLayout>
 </RelativeLayout>
