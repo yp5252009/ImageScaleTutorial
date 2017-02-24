@@ -1,2 +1,2 @@
 # ImageScaleTutorial
-code for post (https://ghui.me/post/imageview-scale/)
+code for post (https://ghui.me/post/2017/02/imageview-scale/)
